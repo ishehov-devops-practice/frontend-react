@@ -1,5 +1,4 @@
 function App() {
-
   // Node REST API
   const fetchIncidents = async () => {
     try {
@@ -7,9 +6,9 @@ function App() {
 
       const json = await response.json();
 
-      console.log("Node Incidents Data:", json.data);
+      console.log('Node Incidents Data:', json.data);
     } catch (err) {
-      console.error("Failed to fetch from Node API", err);
+      console.error('Failed to fetch from Node API', err);
     }
   };
 
@@ -19,14 +18,14 @@ function App() {
       const response = await fetch('/graphql', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: '{ status }' })
+        body: JSON.stringify({ query: '{ status }' }),
       });
 
       const json = await response.json();
 
-      console.log("Go GraphQL Metrics Data:", json.data);
+      console.log('Go GraphQL Metrics Data:', json.data);
     } catch (err) {
-      console.error("Failed to fetch from Go API", err);
+      console.error('Failed to fetch from Go API', err);
     }
   };
 
