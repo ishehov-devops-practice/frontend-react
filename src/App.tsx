@@ -36,6 +36,7 @@ function App() {
     <div style={{ padding: '40px', fontFamily: 'sans-serif' }}>
       <h1>DevOps Sandbox Frontend</h1>
       <p>Status: Static assets successfully compiled and served via TS.</p>
+      <p>Test string to test automated deployment</p>
     </div>
   );
 }
